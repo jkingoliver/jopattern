@@ -41,6 +41,7 @@ services:
           IMAGE_REGISTRY_TOKEN: "{{form.pipeline.parameters.image-registry-token}}"
           REGISTRY_NAMESPACE: "{{form.pipeline.parameters.registry-namespace}}"
           REGION_ID: "{{form.pipeline.parameters.dev-region}}"
+          ALERT_NOTIFICATION: "{{form.pipeline.parameters.alertNotification}}"
         execute: true
 
   #Web IDE
