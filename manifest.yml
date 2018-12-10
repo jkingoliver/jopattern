@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: NodejsWebAlert
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256M
+  domain: not-used.net
+  host: not-used
+  services:
+    - nodejs-web-alert-alertnotificati-1544465679473
