@@ -63,3 +63,4 @@ form:
       image-pull-secret-name: "{{image-pull-secret-name}}"
       image-registry-token: "{{image-registry-token}}"
       registry-namespace: jk_namespace_2
+      alertNotification: "{{alertNotification}}"
