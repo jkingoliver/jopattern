@@ -7,7 +7,7 @@ template:
     - build
 
 toolchain:
-  name: NodejsWebAlert
+  name: "{{form.pipeline.parameters.app-name}}"
 
 services:
   # Github repos
@@ -54,13 +54,13 @@ form:
     schema:
       $ref: deploy.json
     parameters:
-      app-name: NodejsWebAlert
+      app-name: "{{app-name}}"
       dev-region: "{{deploymentRegion}}"
       api-key: "{{api-key}}"
       chart-name: nodejswebalert
-      kube-cluster-name: mycluster
-      cluster-namespace: default
+      kube-cluster-name: "{{kube-cluster-name}}"
+      cluster-namespace: "{{kube-cluster-namespace}}"
       image-pull-secret-name: "{{image-pull-secret-name}}"
       image-registry-token: "{{image-registry-token}}"
-      registry-namespace: jk_namespace_2
+      registry-namespace: "{{image-registry-namespace}}"
       alertNotification: "{{alertNotification}}"
