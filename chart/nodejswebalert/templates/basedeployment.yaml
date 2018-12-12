@@ -36,4 +36,4 @@ spec:
         env:
           - name: PORT
             value : "{{ .Values.service.servicePort }}"
-
+{{ end }}
